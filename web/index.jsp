@@ -1,14 +1,9 @@
 
-<% String contextPath=request.getContextPath(); %>
 <html>
 <head></head>
 <body>
     
 
-<% String message=(String) request.getAttribute("Message");
-   if (message == null) message="NONE"; 
-
- %>
 
  <form name="MyForm" method="POST" action="<%=contextPath%>\MyPackage\MyServlet">
 
@@ -21,9 +16,6 @@ Enter password: <input type="text" name="Password" id= "Password"></input>
 <br>
 <br>
 <br>
-<% if(!message.equalsIgnoreCase("NONE")){%>
-<div align="left"><font color="red" size="3"><%=message%></font></div>
-<% } %>
 
 </form>
 </body>
